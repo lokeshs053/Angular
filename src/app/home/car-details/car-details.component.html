@@ -1,0 +1,17 @@
+<div>
+  
+  <mat-card *ngFor="let cars of upComingCars">
+      <br/>
+    <img  [src]="cars.largePicUrl"/>
+    <hr/>
+    Name:{{cars.carName}}
+    <br/>
+    Price:{{cars.estimatedPrice}}
+    <br/>
+    launchDate:{{cars.expectedLaunchDate}}
+    <br/>
+    Description:{{cars.description}}
+  </mat-card>
+  <br/>
+</div>
+

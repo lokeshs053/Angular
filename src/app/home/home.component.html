@@ -1,0 +1,27 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="side" opened>
+<ul>
+  <li style="cursor: pointer;" *ngFor="let brands of carBrands" 
+  (click)="selectBrand(brands)">{{brands.name}}</li>
+</ul>
+  </mat-sidenav>
+<mat-sidenav-content>
+  <div style="margin-left:200px;">
+    <div>
+    <h4>CarXplore</h4>
+    <span>Welcome : {{userName}}</span>
+    <button (click)="logOut()">logOut</button>
+     </div>
+     <hr/>
+  <div>
+      <router-outlet></router-outlet>
+  </div>
+  </div>
+</mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- <div>
+  <mat-grid-list cols="3" rowHeight="2:1" >
+    <mat-grid-tile *ngFor="let brands of carBrands" (click)="selectBrand(brands)">{{brands.name}}</mat-grid-tile>
+  </mat-grid-list>
+</div> -->

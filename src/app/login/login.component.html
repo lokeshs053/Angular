@@ -1,0 +1,13 @@
+<form>
+    <div>
+            <mat-form-field class="example-full-width">
+                    <input matInput type="email" name="email" [(ngModel)]="email" placeholder="Email"/>
+                  </mat-form-field>
+    </div>
+    <div>password:<input type="password" name="password" [(ngModel)]="password"/></div>
+    <button (click)="login()">login</button>
+    <button type="reset">cancel</button>
+</form>
+<span>{{errorMessage}}</span>
+New member please
+<button (click)="navigateToRegister()">register</button>

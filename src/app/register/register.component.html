@@ -1,0 +1,23 @@
+<form>
+  <div>user name:<input type="text" name="name" [(ngModel)]="name" /></div>
+  <div>email:<input type="text" name="email" [(ngModel)]="email"/></div>
+  <div>mobile:<input type="number" name="mobile" [(ngModel)]="mobile"/></div>
+  <div>password:<input type="text" name="password" [(ngModel)]="password" /></div>
+  <div>confirm password:<input type="text" name="confirmPass" [(ngModel)]="confirmPass" /></div>
+  <div>
+    Male<input type="radio" name="gender" value="male" [(ngModel)]="gender"/>
+    female<input type="radio" name="gender"  value="female"/>
+    others<input type="radio" name="gender" value="others"/>
+  </div>
+<div>
+  <button (click)="register()">register</button>
+  <button type="reset">reset</button>
+
+</div>
+Already a member ? please 
+<button (click)="navigateToLogin()">LogIn</button>
+
+
+
+
+</form>
